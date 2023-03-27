@@ -1,4 +1,4 @@
-//Primo Punto!!!
+// Primo Punto!!!
 
 SELECT *
 FROM `students`
@@ -15,3 +15,10 @@ WHERE `cfu` > 10;
 SELECT * 
 FROM `students`
 WHERE YEAR(`date_of_birth`) > 1993;
+
+// Quarto Punto!!!
+
+SELECT * 
+FROM `courses`
+WHERE `period` = 'I semestre'
+AND `year` = 1;
