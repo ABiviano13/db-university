@@ -35,3 +35,8 @@ AND `date` =  '2020-06-20';
 SELECT * 
 FROM `degrees`
 WHERE `level` = 'magistrale';
+
+// Settimo Punto!!!
+
+SELECT COUNT(`id`) AS `departments_total`
+FROM `departments`;
