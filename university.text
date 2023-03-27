@@ -40,3 +40,9 @@ WHERE `level` = 'magistrale';
 
 SELECT COUNT(`id`) AS `departments_total`
 FROM `departments`;
+
+// Ottavo Punto!!!
+
+SELECT * 
+FROM `teachers`
+WHERE `phone` IS NULL;
