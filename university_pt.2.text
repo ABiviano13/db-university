@@ -1,7 +1,18 @@
-// Primo esercizio
+// Primo punto
 
 SELECT * 
 FROM `degrees`
 INNER JOIN `students`
 ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+
+
+// Secondo punto
+
+SELECT * 
+FROM `degrees`
+INNER JOIN `departments`
+ON `degrees`.`department_id` = `departments`.`id`
+WHERE `degrees`.`level` = 'magistrale'
+AND `departments`.`name` = 'Dipartimento di Neuroscienze';
+
