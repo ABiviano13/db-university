@@ -16,3 +16,8 @@ ON `degrees`.`department_id` = `departments`.`id`
 WHERE `degrees`.`level` = 'magistrale'
 AND `departments`.`name` = 'Dipartimento di Neuroscienze';
 
+// Terzo punto
+
+SELECT * 
+FROM `course_teacher`
+WHERE `teacher_id` = 44;
