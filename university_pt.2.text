@@ -1,3 +1,5 @@
+// INNER JOIN
+
 // Primo punto
 
 SELECT * 
@@ -56,3 +58,14 @@ ON `courses`.`degree_id` = `degrees`.`id`
 INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
 WHERE `departments`.`name` = 'Dipartimento di Matematica';
+
+
+
+
+// GROUP BY
+
+// Secondo punto 
+
+SELECT COUNT(`id`) AS `id`, `teachers`.`office_address`
+FROM `teachers`
+GROUP BY `office_address`;
