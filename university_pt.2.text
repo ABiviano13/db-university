@@ -21,3 +21,13 @@ AND `departments`.`name` = 'Dipartimento di Neuroscienze';
 SELECT * 
 FROM `course_teacher`
 WHERE `teacher_id` = 44;
+
+// Quarto punto
+
+SELECT * 
+FROM `students`
+INNER JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`
+INNER JOIN `departments`
+ON `degrees`.`department_id` = `departments`.`id`
+ORDER BY `students`.`surname`;
