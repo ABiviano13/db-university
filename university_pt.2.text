@@ -64,6 +64,8 @@ WHERE `departments`.`name` = 'Dipartimento di Matematica';
 
 // GROUP BY
 
+// Primo punto
+
 // Secondo punto 
 
 SELECT COUNT(`id`) AS `id`, `teachers`.`office_address`
@@ -77,3 +79,9 @@ FROM `exams`
 INNER JOIN `exam_student`
 ON `exams`.`id` = `exam_student`.`exam_id`
 GROUP BY `exam_student`.`vote`;
+
+// Quarto punto
+
+SELECT `department_id`, COUNT(*) AS `numero_totale`
+FROM `degrees`
+GROUP BY `department_id`;
